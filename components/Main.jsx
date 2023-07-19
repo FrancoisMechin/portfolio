@@ -20,6 +20,9 @@ const Main = () => {
                     I'm focused on building responsive front-end web applications integrating back-end technologies.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+
+
+                    {/* //? Utilisé deux fois, composants à créer? */}
                     <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <FaLinkedinIn/>
                     </div>
@@ -32,6 +35,8 @@ const Main = () => {
                     <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <BsFillPersonLinesFill />
                     </div>
+                    {/* //? ///////////////////////////////////////*/}
+
                 </div>
             </div>
         </div>

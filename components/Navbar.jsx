@@ -26,6 +26,8 @@ const Navbar = () => {
             
             <div className='absolute right-10'>
                 <ul className='hidden md:flex'>
+
+                    {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
                     <Link href='/'>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Home
@@ -51,6 +53,7 @@ const Navbar = () => {
                             Contact
                         </li>
                     </Link>
+                    {/* //! ////////////////////////////////////////////////////////////////////////// */}
                 </ul>  
                 <div 
                 onClick={handleNav}
@@ -84,6 +87,8 @@ const Navbar = () => {
 
                     <div className='py-4 flex flex-col'>
                         <ul className='uppercase'>
+
+                            {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
                             <Link href='/'>
                                 <li className='py-4 text-sm'>Home</li>
                             </Link>
@@ -99,10 +104,13 @@ const Navbar = () => {
                             <Link href='/'>
                                 <li className='py-4 text-sm'>Contact</li>
                             </Link>
+                            {/* //! ///////////////////////////////////////////////////////////////////////////// */}
                         </ul>
                         <div className='pt-40'>
                             <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
+
+                                {/* //? Utilisé deux fois, composants à créer? */}
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <FaLinkedinIn />
                                 </div>
@@ -115,6 +123,8 @@ const Navbar = () => {
                                  <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
                                     <BsFillPersonLinesFill />
                                 </div>
+                                {/* //? ///////////////////////////////////// */}
+
                             </div>
 
                         </div>
