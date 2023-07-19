@@ -3,13 +3,22 @@
 @tailwind utilities;
 
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2f2937] tracking-wide
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }
-
-  h1,h2,h3,h4,h5,h6 {
-    @apply font-bold
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-semibold
   }
 
   h1 {
@@ -21,7 +30,7 @@
   }
 
   li {
-    @apply cursor-pointer
+    @apply cursor-pointer font-semibold
   }
 
   button {
