@@ -4,11 +4,16 @@
 
 
 html{
-  scroll-behavior: smooth;
+  --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
 }
 
 
 @layer base {
+  html {
+    @apply scroll-smooth
+  }
+
   body {
     @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
   }

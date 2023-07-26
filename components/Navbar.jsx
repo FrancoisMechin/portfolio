@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Link from 'next/link'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
@@ -9,46 +9,78 @@ import {BsFillPersonLinesFill} from 'react-icons/bs'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
 
     const handleNav = () => {
         setNav(!nav)
     }
 
+    useEffect(() => {
+        const handleShadow = () => {
+            if (window.scrollY >= 90) {
+                setShadow(true)
+            } else {
+                setShadow(false)
+            }
+        }
+        window.addEventListener('scroll', handleShadow)
+
+        // document.querySelectorAll('a').forEach( link => {
+        //     link.addEventListener('click', function(e){
+        //         e.preventDefault();
+        //         console.log(this.hash)
+        //         const hash = this.hash;
+        //         window.scrollTo({top: document.querySelector(hash).offsetTop, behavior: 'smooth'});
+               
+
+        //             // Add hash (#) to URL when done scrolling (default click behavior)
+        //             window.location.hash = hash;
+               
+        //     })
+        // })
+    }, [])
+
 
     return (
 
     // * Barre de navigation desktop first
-    <div className='fixed w-full h-20 shadow-xl bg-[#ecf0f3]/80 z-10'>
+    <div className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3]/80 z-10' : 'fixed w-full h-20 bg-[#ecf0f3]/80 z-10'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
             
             {/* //? Logo nav */}
-            <Image src="/../public/assets/fmlogo-transparent.png" alt="Logo" width='100' height='50'/>
+            <Link href='/' >
+            <Image 
+            src="/../public/assets/fmlogo-transparent.png" 
+            alt="Logo" 
+            width='100' 
+            height='50'/>
+            </Link>
             
             <div className='absolute right-10'>
                 <ul className='hidden md:flex'>
 
                     {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
-                    <Link href='/'>
+                    <Link href='/' scroll={true}>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Home
                         </li>
                     </Link>
-                    <Link href='/'>
+                    <Link href='#about' scroll={false}>
                         <li className='ml-10 text-sm  uppercase hover:border-b'>
                             About
                         </li>
                     </Link>
-                    <Link href='/'>
+                    <Link href='#skills' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Skills
                         </li>
                     </Link>
-                    <Link href='/'>
+                    <Link href='#projects' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Projects
                         </li>
                     </Link>
-                    <Link href='/'>
+                    <Link href='#contact' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b'>
                             Contact
                         </li>
@@ -58,7 +90,7 @@ const Navbar = () => {
                 <div 
                 onClick={handleNav}
                 className='md:hidden'>
-                    <AiOutlineMenu size={30}/>
+                    <AiOutlineMenu size={30} className='cursor-pointer'/>
                 </div>
             </div>
 
@@ -73,7 +105,15 @@ const Navbar = () => {
                     }>
                     <div>
                         <div className='flex w-full items-center justify-between'>
-                            <Image src="/../public/assets/fmlogo-transparent.png" alt="Logo" width='100' height='60'/>
+
+                            {/* Logo mobile menu */}
+                            <Link href='/'>
+                            <Image src="/../public/assets/fmlogo-transparent.png" 
+                                alt="Logo" 
+                                width='100' 
+                                height='60'
+                            />
+                            </Link>
                             <div 
                             onClick={handleNav}
                             className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'>
@@ -90,19 +130,19 @@ const Navbar = () => {
 
                             {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
                             <Link href='/'>
-                                <li className='py-4 text-sm'>Home</li>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>About</li>
+                            <Link href='#about'>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>About</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Skills</li>
+                            <Link href='#skills'>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Skills</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Projects</li>
+                            <Link href='#projects'>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Projects</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Contact</li>
+                            <Link href='#contact'>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact</li>
                             </Link>
                             {/* //! ///////////////////////////////////////////////////////////////////////////// */}
                         </ul>
