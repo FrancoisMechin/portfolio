@@ -1,5 +1,0 @@
-Skills = [
-    html: [
-        src: '',
-    ],
-]
