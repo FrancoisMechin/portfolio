@@ -1,3 +1,5 @@
+"use client"
+
 /* eslint-disable react/no-unescaped-entities */
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,11 +7,32 @@ import React, {useState, useEffect} from 'react'
 import {AiOutlineClose, AiOutlineMenu, AiOutlineMail} from 'react-icons/ai'
 import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
+import Logo from "@/public/assets/fmlogo--colors.png"
+import { useRouter } from 'next/router'
 
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
+    const [navBg, setNavBg] = useState('#ecf0f3')
+    const [linkColor, setLinkColor] = useState('#1f2937')
+    const router = useRouter()
+
+    useEffect(() => {
+        if (
+        router.asPath === '/netflixclone' ||
+        router.asPath === '/webcse' ||
+        router.asPath === '/netflixclone' ||
+        router.asPath === '/netflixclone' 
+        ) {
+            setNavBg('transparent')
+            setLinkColor('#ecf0f3')
+        } else {
+            setNavBg('#ecf0f3')
+            setLinkColor('#1f2937')
+        }
+    }, [router])
+    
 
     const handleNav = () => {
         setNav(!nav)
@@ -24,67 +47,59 @@ const Navbar = () => {
             }
         }
         window.addEventListener('scroll', handleShadow)
-
-        // document.querySelectorAll('a').forEach( link => {
-        //     link.addEventListener('click', function(e){
-        //         e.preventDefault();
-        //         console.log(this.hash)
-        //         const hash = this.hash;
-        //         window.scrollTo({top: document.querySelector(hash).offsetTop, behavior: 'smooth'});
-               
-
-        //             // Add hash (#) to URL when done scrolling (default click behavior)
-        //             window.location.hash = hash;
-               
-        //     })
-        // })
+    
     }, [])
 
 
     return (
 
     // * Barre de navigation desktop first
-    <div className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3]/80 z-10' : 'fixed w-full h-20 bg-[#ecf0f3]/80 z-10'}>
+    <div 
+    style={{backgroundColor: `${navBg}`}}
+    className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3]/80 z-50' : 'fixed w-full h-20 bg-[#ecf0f3]/80 z-50'}>
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
             
             {/* //? Logo nav */}
             <Link href='/' >
             <Image 
-            src="/../public/assets/fmlogo-transparent.png" 
-            alt="Logo" 
-            width='100' 
-            height='50'/>
+                className='w-[90px] h-[70px]'
+                src={Logo}
+                alt="Logo"
+        
+            />
             </Link>
             
             <div className='absolute right-10'>
-                <ul className='hidden md:flex'>
-
+                <ul 
+                style={{color: `${linkColor}`}}
+                className='hidden md:flex'>
                     {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
-                    <Link href='/' scroll={true}>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <Link href='/#home' scroll={false} >
+                        <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
                             Home
                         </li>
                     </Link>
-                    <Link href='#about' scroll={false}>
-                        <li className='ml-10 text-sm  uppercase hover:border-b'>
+                    <Link href='/#about' scroll={false}>
+                        <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
                             About
                         </li>
                     </Link>
-                    <Link href='#skills' scroll={false}>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <Link href='/#skills' scroll={false}>
+                        <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
                             Skills
                         </li>
                     </Link>
-                    <Link href='#projects' scroll={false}>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <Link href='/#projects' scroll={false}>
+                        <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
                             Projects
                         </li>
                     </Link>
-                    <Link href='#contact' scroll={false}>
-                        <li className='ml-10 text-sm uppercase hover:border-b'>
+                    <Link href='/#contact' scroll={false}>
+                        <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
                             Contact
                         </li>
                     </Link>
+    
                     {/* //! ////////////////////////////////////////////////////////////////////////// */}
                 </ul>  
                 <div 
@@ -108,10 +123,11 @@ const Navbar = () => {
 
                             {/* Logo mobile menu */}
                             <Link href='/'>
-                            <Image src="/../public/assets/fmlogo-transparent.png" 
+                            <Image 
+                                className='w-[90px] h-[70px]'
+                                src={Logo} 
                                 alt="Logo" 
-                                width='100' 
-                                height='60'
+                                
                             />
                             </Link>
                             <div 
@@ -121,7 +137,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='border-b border-gray-300 mb-4'>
-                            <p className='w-[85%] md:w-[90%] py-4'>Lets build something legendary together</p>
+                            <p className='w-[85%] md:w-[90%] py-4'>Collaborate, Innovate: Let's Build Together!</p>
                         </div>
                     </div>
 
@@ -129,19 +145,19 @@ const Navbar = () => {
                         <ul className='uppercase'>
 
                             {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
-                            <Link href='/'>
+                            <Link href='/#home' scroll={false}>
                                 <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
                             </Link>
-                            <Link href='#about'>
+                            <Link href='/#about' scroll={false}>
                                 <li onClick={()=> setNav(false)} className='py-4 text-sm'>About</li>
                             </Link>
-                            <Link href='#skills'>
+                            <Link href='/#skills' scroll={false}>
                                 <li onClick={()=> setNav(false)} className='py-4 text-sm'>Skills</li>
                             </Link>
-                            <Link href='#projects'>
+                            <Link href='/#projects' scroll={false}>
                                 <li onClick={()=> setNav(false)} className='py-4 text-sm'>Projects</li>
                             </Link>
-                            <Link href='#contact'>
+                            <Link href='/#contact' scroll={false}>
                                 <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact</li>
                             </Link>
                             {/* //! ///////////////////////////////////////////////////////////////////////////// */}

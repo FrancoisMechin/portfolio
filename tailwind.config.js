@@ -16,6 +16,10 @@ module.exports = {
         sans: ['var(--font-quicksand)'],
         mono: ['var(--font-roboto-mono)'],
       },
+      screens:{
+        'xs': '410px',
+        'xxs': '300px'
+      }
     },
   },
   plugins: [],

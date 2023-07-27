@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 const Contact = () => {
   return (
-    <div id='contact' className='w-full lg:h-screen'>
+    <div id='contact' className='w-full md:h-screen'>
         <div className='max-w-[1240px] m-auto px-2 py-16 w-full'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
             <h2 className='py-4'>Get in touch</h2>
@@ -38,22 +38,32 @@ const Contact = () => {
                         <div>
                         <p className='uppercase pt-8'>Connect with me</p>
                         <div className='flex items-center justify-between py-4'>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                            <FaLinkedinIn/>
+
+                            <a href="https://www.linkedin.com/in/francois-mechin/" target='__blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <FaLinkedinIn/>
                                 </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <FaGithub />
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <AiOutlineMail/>
-                            </div>
-                            <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                <BsFillPersonLinesFill />
-                            </div>
+                            </a>
+                            <a href="https://github.com/FrancoisMechin" target='__blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <FaGithub />
                                 </div>
-                            </div>
+                            </a>
+                            <a href="mailto:f.mechin@protonmail.com" target='__blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <AiOutlineMail/>
+                                </div>
+                            </a>
+                            <a href="https://www.malt.fr/" target='__blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <BsFillPersonLinesFill />
+                                </div>
+                            </a>
+                        
+                        </div>
                     </div>
                 </div>
+            </div>
 
 
                 {/* right */}
@@ -80,7 +90,7 @@ const Contact = () => {
                                     </label>
                                     <input 
                                     className='border-2 rounded-lg p-3 flex border-s-[#5651e5]'
-                                    type="text"/>
+                                    type="tel"/>
                                 </div>
 
 
@@ -118,7 +128,7 @@ const Contact = () => {
             </div>
 
             <div className='flex justify-center pt-[4rem]'>
-                <Link href='/'>
+                <Link href='#home' scroll={false}>
                     <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                         <HiOutlineChevronDoubleUp 
                         className='text-[#5651e5]'

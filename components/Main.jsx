@@ -9,7 +9,7 @@ const Main = () => {
     <div id='home' className='w-full h-screen text-center'>
         <div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
             <div>
-                <p className='uppercase text-sm tracking-widest text-gray-600'>Let's build something together</p>
+                <p className='uppercase text-sm tracking-widest text-gray-600'>Collaborate, Innovate: Let's Build Together!</p>
                 <h1 className='py-4 text-gray-600'>
                     Hi, I'm <span className='text-[#5651e5]'>François</span>
                 </h1>
@@ -17,24 +17,32 @@ const Main = () => {
                     A Full-Stack Developer
                 </h1>
                 <p className='py-4 text-gray-600 max-w-[70%] m-auto'>
-                    I'm focused on building responsive front-end web applications integrating back-end technologies.
+                    Building responsive front-end web applications while integrating powerful back-end technologies is at the core of my endeavors.
                 </p>
                 <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
 
 
                     {/* //? Utilisé deux fois, composants à créer? */}
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaLinkedinIn/>
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <FaGithub />
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <AiOutlineMail/>
-                    </div>
-                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                        <BsFillPersonLinesFill />
-                    </div>
+                    <a href="https://www.linkedin.com/in/francois-mechin/" target='__blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                <FaLinkedinIn/>
+                        </div>
+                    </a>
+                    <a href="https://github.com/FrancoisMechin" target='__blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <FaGithub />
+                        </div>
+                    </a>
+                    <a href="mailto:f.mechin@protonmail.com" target='__blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <AiOutlineMail/>
+                        </div>
+                    </a>
+                    <a href="https://www.malt.fr/" target='__blank'>
+                        <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                            <BsFillPersonLinesFill />
+                        </div>
+                    </a>
                     {/* //? ///////////////////////////////////////*/}
 
                 </div>
