@@ -1,11 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import netflixCloneImg from "../public/assets/projects/nextflix.png";
+import resumeImg from "../public/assets/projects/resumeweb.png";
 import { FcInfo } from "react-icons/fc";
 import Link from "next/link";
 import Head from "next/head";
 
-const netflixclone = () => {
+const resumeweb = () => {
 	return (
 		<>
 			<Head>
@@ -16,15 +16,15 @@ const netflixclone = () => {
 					<div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10" />
 					<Image
 						className="absolute z-1 object-cover object-top"
-						src={netflixCloneImg}
+						src={resumeImg}
 						fill
 						alt="netflixclone-img"
 						placeholder="blur"
 						blurDataURL="../public/assets/projects/netflixclone.png"
 					/>
 					<div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] text-white translate-x-[-50%] translate-y-[-50%] z-10 ">
-						<h2 className="py-2">Netflix Clone</h2>
-						<h3>NextJS, MongoDB, Prisma, Tailwind..</h3>
+						<h2 className="py-2">Resume Website</h2>
+						<h3>HTML, CSS, Javascript</h3>
 					</div>
 				</div>
 
@@ -33,23 +33,14 @@ const netflixclone = () => {
 						<p>Project</p>
 						<h2>Overview</h2>
 						<p className="my-3">
-							The development of this Netflix clone stemmed from my aspiration to acquire essential
-							skills in NextJS, Tailwind, Prisma, and MongoDB. Through this project, I delved into the
-							intricacies of web development, honing my proficiency in cutting-edge technologies and
-							frameworks.
-							<br />
-							<br />
-							Since achieving my professional title, my unwavering dedication to personal and
-							professional growth has driven me to actively pursue projects aligned with my expertise
-							and ambitions. By engaging in endeavors that challenge and expand my skill set, I aim to
-							fortify my capabilities in specialized domains, ensuring a dynamic and impactful career
-							trajectory.
+							This website was the first project I undertook during my initial month of training. I
+							took advantage of my free time to experiment with animations, create double-sided cards,
+							set up email notifications, and more. Although it was a straightforward project, it
+							provided me with valuable insights into fundamental programming languages during my early
+							learning phase.
 						</p>
-						<a href="https://nextflix-francoismechin.vercel.app/" target="__blank">
+						<a href="https://francoismechin.com" target="__blank">
 							<button className="px-8 mt-4 py-2 mr-8">Demo</button>
-						</a>
-						<a href="https://github.com/FrancoisMechin/nextflix" target="__blank">
-							<button className="px-8 mt-4 py-2 ">Code</button>
 						</a>
 					</div>
 
@@ -93,4 +84,4 @@ const netflixclone = () => {
 	);
 };
 
-export default netflixclone;
+export default resumeweb;
