@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutMe from '@/public/assets/aboutme.jpeg'
 import Image from 'next/image'
+import Link from 'next/link'
 
 
 const About = () => {
@@ -35,7 +36,11 @@ const About = () => {
                     Together, let&apos;s build a future where technology empowers and enriches the lives of users worldwide.
                 </p>
                 
-                <p className='py-2 text-gray-600 underline cursor-pointer '>Check out some of my latest projects.</p>
+
+                <Link href='/#projects'>
+                    <p className='py-2 text-gray-600 underline cursor-pointer '>Check out some of my latest projects.</p>
+                </Link>
+
             </div>
             <div className='w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:p-0 ease-in duration-300'>
                 
