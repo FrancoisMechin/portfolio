@@ -1,12 +1,12 @@
+# Personal Website / Portfolio
 
-
-
-# Language Translation
+Francois Mechin
 
 ## Languages
- - English
- - French
 
- ## i18n
+-  English
+-  French
 
- npm install next-i18next react-i18next i18next 
+## i18n
+
+npm install next-i18next react-i18next i18next
