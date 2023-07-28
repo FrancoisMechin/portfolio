@@ -9,9 +9,10 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from "@/public/assets/fmlogo--colors.png"
 import { useRouter } from 'next/router'
+import LanguageDropdown from '@/components/LanguageDropdown'
 
 
-const Navbar = () => {
+const Navbar = ({locales}) => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
     const [navBg, setNavBg] = useState('#ecf0f3')
@@ -57,7 +58,7 @@ const Navbar = () => {
     <div 
     style={{backgroundColor: `${navBg}`}}
     className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3]/80 z-50' : 'fixed w-full h-20 bg-[#ecf0f3]/80 z-50'}>
-        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-2'>
             
             {/* //? Logo nav */}
             <Link href='/' >
@@ -68,6 +69,10 @@ const Navbar = () => {
         
             />
             </Link>
+
+            <div className='absolute left-[10rem]'>
+                <LanguageDropdown locales={locales}/>
+            </div>
             
             <div className='absolute right-10'>
                 <ul 
