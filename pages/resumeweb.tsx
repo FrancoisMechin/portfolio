@@ -40,7 +40,7 @@ const resumeweb = () => {
 						<p className="my-3">
 							<FormattedMessage id="page.resumeweb.block.infos.text" />
 						</p>
-						<a href="https://francoismechin.com" target="__blank">
+						<a href="https://old-personalwebsite.vercel.app/" target="__blank">
 							<button className="px-8 mt-4 py-2 mr-8">Demo</button>
 						</a>
 					</div>
