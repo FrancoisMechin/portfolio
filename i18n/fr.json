@@ -1,9 +1,7 @@
 {
     "comment.page.home": "/// ? TITRE ET DESCRIPTION DU SITE WEB EN FRANÇAIS ///",
     "page.home.head.title": "Développeur Full-Stack : François",
-    "page.home.head.meta.desc": "Exemple en français",
-    "page.home.title": "Bienvenue sur la page d'accueil",
-    "page.home.description": "Ceci est la traduction en français",
+    "page.home.head.meta.desc": "Développeur Full-Stack #Freelance",
 
     "comment.navbar": "/// ? MENU DE NAVIGATION EN FRANÇAIS ///",
     "navbar.items.home": "ACCUEIL",

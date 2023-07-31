@@ -1,9 +1,7 @@
 {
     "comment.page.home":"/// ? WEBSITE TITLE AND DESC ENGLISH TRAD ///",
     "page.home.head.title": "Full-stack Developer : Francois",
-    "page.home.head.meta.desc": "English example",
-    "page.home.title": "Welcome to the homepage",
-    "page.home.description": "Its the english translation here",
+    "page.home.head.meta.desc": "Full-stack Developer #Freelance",
 
     "comment.navbar":"/// ? NAVBAR ENGLISH TRAD ///",
     "navbar.items.home":"HOME",
