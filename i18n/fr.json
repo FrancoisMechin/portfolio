@@ -11,24 +11,29 @@
     "navbar.items.skills": "COMPÉTENCES",
     "navbar.items.projects": "PROJETS",
     "navbar.items.contact": "CONTACT",
+    "navbar.mobile.slogan":"Collaborons, Innovons : Construisons Ensemble !",
+    "navbar.mobile.redirects":"CONTACTEZ-MOI",
     
-
     "comment.main": "/// ? SECTION PRINCIPALE EN FRANÇAIS ///",
-    "main.text.slogan": "COLLABORATE, INNOVATE: LET'S BUILD TOGETHER!",
-    "main.text.intro": "Bonjour, je suis <span className='text-[#5651e5]'>François</span>",
-    "main.text.stack": "Développeur Full-Stack",
+    "main.text.slogan": "Collaborons, Innovons : Construisons Ensemble !",
+    "main.text.intro.first": "Bonjour, je suis",
+    "main.text.intro.second": "François",
+    "main.text.job": "Développeur Full-Stack",
     "main.text.content": "La création d'applications web réactives côté client, tout en intégrant des technologies puissantes côté serveur, est au cœur de mes réalisations.",
 
     "comment.about": "/// ? SECTION À PROPOS EN FRANÇAIS ///",
     "about.section.title": "À PROPOS",
     "about.section.caption": "Qui je suis",
-    "about.text.title": "// <span className='text-[#5651e5] font-semibold'>Rompre les conventions en tant que développeur junior.</span>",
-    "about.text.content": "En tant que développeur junior axé sur la croissance, je me spécialise dans la création d'applications frontales réactives compatibles avec les appareils mobiles, qui se connectent de manière transparente aux API et aux différentes technologies côté serveur. Mon parcours m'a conduit à explorer les univers de React, NextJS, NodeJS et Laravel, et je suis animé par une passion insatiable pour l'apprentissage de nouvelles technologies.<br /><br />La polyvalence est un aspect fondamental de ma démarche, car je suis convaincu qu'il existe plusieurs façons d'accomplir une tâche. Bien que je me distingue dans le développement d'applications frontales en utilisant HTML, CSS et JavaScript, mon adaptabilité me permet d'embrasser rapidement de nouvelles piles technologiques au besoin.<br /><br />Bien que mon parcours inclue un Bac Pro Commerce, ma passion de longue date pour la technologie et l'informatique m'a poussé à entreprendre une reconversion professionnelle dans le développement web et mobile, aboutissant à l'obtention de mon titre professionnel de Développeur Web/Mobile.<br /><br />Pour moi, être un excellent développeur ne consiste pas seulement à maîtriser un langage spécifique, mais plutôt à choisir l'outil le plus adapté pour chaque projet unique. Je suis impatient de collaborer et de mettre en valeur mes compétences pour créer des solutions innovantes qui repoussent les limites du développement web. Ensemble, construisons un avenir où la technologie renforce et enrichit la vie des utilisateurs du monde entier.",
+    "about.text.title": "// Rompre les conventions en tant que développeur junior.",
+    "about.text.content.first":"En tant que développeur junior axé sur la croissance, je me spécialise dans la création d'applications frontales réactives compatibles avec les appareils mobiles, qui se connectent de manière transparente aux API et aux différentes technologies côté serveur. Mon parcours m'a conduit à explorer les univers de React, NextJS, NodeJS et Laravel, et je suis animé par une passion insatiable pour l'apprentissage de nouvelles technologies.",
+    "about.text.content.second":"La polyvalence est un aspect fondamental de ma démarche, car je suis convaincu qu'il existe plusieurs façons d'accomplir une tâche. Bien que je me distingue dans le développement d'applications frontales en utilisant HTML, CSS et JavaScript, mon adaptabilité me permet d'embrasser rapidement de nouvelles piles technologiques au besoin.",
+    "about.text.content.third":"Bien que mon parcours inclue un Bac Pro Commerce, ma passion de longue date pour la technologie et l'informatique m'a poussé à entreprendre une reconversion professionnelle dans le développement web et mobile, aboutissant à l'obtention de mon titre professionnel de Développeur Web/Mobile.",
+    "about.text.content.fourth":"Pour moi, être un excellent développeur ne consiste pas seulement à maîtriser un langage spécifique, mais plutôt à choisir l'outil le plus adapté pour chaque projet unique. Je suis impatient de collaborer et de mettre en valeur mes compétences pour créer des solutions innovantes qui repoussent les limites du développement web. Ensemble, construisons un avenir où la technologie renforce et enrichit la vie des utilisateurs du monde entier.",
     "about.text.link": "Découvrez certains de mes derniers projets.",
 
     "comment.skills": "/// ? SECTION COMPÉTENCES EN FRANÇAIS ///",
     "skills.section.title": "COMPÉTENCES",
-    "skills.section.context": "Ce que je sais faire",
+    "skills.section.context": "Ce que je peux faire",
 
     "comment.projects": "/// ? SECTION PROJETS EN FRANÇAIS ///",
     "projects.section.title": "PROJETS",
@@ -36,13 +41,15 @@
     "projects.card.title.webcse": "WebCSE Local TV",
     "projects.card.title.netflix": "Clone de Netflix",
     "projects.card.title.resumeweb": "Site de CV avec cartes retournables",
-    "projects.card.redirect": "Plus d'informations",
+    "projects.card.redirect": "+ d'infos",
 
     "comment.contact": "/// ? SECTION CONTACT EN FRANÇAIS ///",
     "contact.section.title": "CONTACT",
     "contact.section.context": "Restons en contact",
     "contact.card.job": "Développeur Full-Stack",
-    "contact.card.text": "Je suis <span className='text-green-400 font-bold tracking-wider'>actuellement disponible</span> pour des projets en freelance ou à temps plein. Contactez-moi et discutons ensemble.",
+    "contact.card.text.first":"Je suis ",
+    "contact.card.text.second":"actuellement disponible",
+    "contact.card.text.third":" pour des projets en freelance ou à temps plein. Contactez-moi et discutons ensemble.",
     "contact.card.redirects": "CONTACTEZ-MOI",
     "contact.form.label.name": "NOM",
     "contact.form.label.phone": "NUMÉRO DE TÉLÉPHONE",
@@ -57,10 +64,12 @@
     "pages.global.redirect.back": "Retour",
 
     "comment.page.netflixclone": "/// ? PAGE DU CLONE DE NETFLIX EN ANGLAIS ///",
-    "page.netflixclone.block.infos.text": "Le développement de ce clone de Netflix est né de mon désir d'acquérir des compétences essentielles en NextJS, Tailwind, Prisma et MongoDB. À travers ce projet, j'ai plongé dans les subtilités du développement web, perfectionnant ma maîtrise des technologies et des frameworks de pointe.<br /><br />Depuis l'obtention de mon titre professionnel, mon dévouement indéfectible à la croissance personnelle et professionnelle m'a poussé à rechercher activement des projets correspondant à mon expertise et à mes ambitions. En m'impliquant dans des projets qui mettent au défi et développent mes compétences, je vise à renforcer mes capacités dans des domaines spécialisés, assurant ainsi une trajectoire de carrière dynamique et impactante.",
-
+    "page.netflixclone.infos.text.first":"Le développement de ce clone de Netflix est né de mon désir d'acquérir des compétences essentielles en NextJS, Tailwind, Prisma et MongoDB. À travers ce projet, j'ai plongé dans les subtilités du développement web, perfectionnant ma maîtrise des technologies et des frameworks de pointe.",
+    "page.netflixclone.infos.text.second":"Depuis l'obtention de mon titre professionnel, mon dévouement indéfectible à la croissance personnelle et professionnelle m'a poussé à rechercher activement des projets correspondant à mon expertise et à mes ambitions. En m'impliquant dans des projets qui mettent au défi et développent mes compétences, je vise à renforcer mes capacités dans des domaines spécialisés, assurant ainsi une trajectoire de carrière dynamique et impactante.",
+    
     "comment.page.webcse": "/// ? PAGE WEBCSE EN ANGLAIS ///",
-    "page.webcse.block.infos.text": "Pendant mon stage de 3 mois en tant que développeur web/mobile web, j'ai travaillé dans une entreprise multimédia sur une plateforme de télévision locale. L'objectif était de planifier et de gérer des listes de lecture de films quotidiennes, des bandeaux d'actualités et une fonction de rediffusion. Cependant, j'étais le seul développeur attitré à ce projet, et il n'a pas pu être déployé en raison des droits de propriété de l'entreprise. Voici des images présentant les fonctionnalités de l'application.<br /><br />Ce projet illustre mon expertise en développement web, en mettant l'accent sur la conception centrée sur l'utilisateur et des fonctionnalités de pointe.",
+    "page.webcse.block.infos.text.first":"Pendant mon stage de 3 mois en tant que développeur web/mobile web, j'ai travaillé dans une entreprise multimédia sur une plateforme de télévision locale. L'objectif était de planifier et de gérer des listes de lecture de films quotidiennes, des bandeaux d'actualités et une fonction de rediffusion. Cependant, j'étais le seul développeur attitré à ce projet, et il n'a pas pu être déployé en raison des droits de propriété de l'entreprise. Voici des images présentant les fonctionnalités de l'application.",
+    "page.webcse.block.infos.text.second":"Ce projet illustre mon expertise en développement web, en mettant l'accent sur la conception centrée sur l'utilisateur et des fonctionnalités de pointe.",
 
     "comment.page.resumeweb": "/// ? PAGE DU SITE DE CV EN ANGLAIS ///",
     "page.resumeweb.block.infos.text": "Ce site web a été le premier projet que j'ai entrepris lors de mon premier mois de formation. J'ai profité de mon temps libre pour expérimenter les animations, créer des cartes retournables, configurer des notifications par e-mail, et bien plus encore. Bien qu'il s'agisse d'un projet simple, il m'a fourni des perspectives précieuses sur les langages de programmation fondamentaux lors de mes premières étapes d'apprentissage."

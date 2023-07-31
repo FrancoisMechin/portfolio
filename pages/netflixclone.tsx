@@ -4,6 +4,7 @@ import netflixCloneImg from "../public/assets/projects/nextflix.png";
 import { FcInfo } from "react-icons/fc";
 import Link from "next/link";
 import Head from "next/head";
+import { FormattedMessage } from "react-intl";
 
 const netflixclone = () => {
 	return (
@@ -30,20 +31,17 @@ const netflixclone = () => {
 
 				<div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
 					<div className="col-span-4">
-						<p>Project</p>
-						<h2>Overview</h2>
+						<p>
+							<FormattedMessage id="pages.global.block.infos.context" />
+						</p>
+						<h2>
+							<FormattedMessage id="pages.global.block.infos.title" />
+						</h2>
 						<p className="my-3">
-							The development of this Netflix clone stemmed from my aspiration to acquire essential
-							skills in NextJS, Tailwind, Prisma, and MongoDB. Through this project, I delved into the
-							intricacies of web development, honing my proficiency in cutting-edge technologies and
-							frameworks.
+							<FormattedMessage id="page.netflixclone.infos.text.first" />
 							<br />
 							<br />
-							Since achieving my professional title, my unwavering dedication to personal and
-							professional growth has driven me to actively pursue projects aligned with my expertise
-							and ambitions. By engaging in endeavors that challenge and expand my skill set, I aim to
-							fortify my capabilities in specialized domains, ensuring a dynamic and impactful career
-							trajectory.
+							<FormattedMessage id="page.netflixclone.infos.text.second" />
 						</p>
 						<a href="https://nextflix-francoismechin.vercel.app/" target="__blank">
 							<button className="px-8 mt-4 py-2 mr-8">Demo</button>
@@ -85,7 +83,9 @@ const netflixclone = () => {
 						</div>
 					</div>
 					<Link href="/#projects" scroll={false}>
-						<p className="underline decoration-[#5651E5] underline-offset-[6px] cursor-pointer">Back</p>
+						<p className="underline decoration-[#5651E5] underline-offset-[6px] cursor-pointer">
+							<FormattedMessage id="pages.global.redirect.back" />
+						</p>
 					</Link>
 				</div>
 			</div>

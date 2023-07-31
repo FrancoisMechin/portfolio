@@ -4,6 +4,7 @@ import resumeImg from "../public/assets/projects/resumeweb.png";
 import { FcInfo } from "react-icons/fc";
 import Link from "next/link";
 import Head from "next/head";
+import { FormattedMessage } from "react-intl";
 
 const resumeweb = () => {
 	return (
@@ -30,14 +31,14 @@ const resumeweb = () => {
 
 				<div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8">
 					<div className="col-span-4">
-						<p>Project</p>
-						<h2>Overview</h2>
+						<p>
+							<FormattedMessage id="pages.global.block.infos.context" />
+						</p>
+						<h2>
+							<FormattedMessage id="pages.global.block.infos.title" />
+						</h2>
 						<p className="my-3">
-							This website was the first project I undertook during my initial month of training. I
-							took advantage of my free time to experiment with animations, create double-sided cards,
-							set up email notifications, and more. Although it was a straightforward project, it
-							provided me with valuable insights into fundamental programming languages during my early
-							learning phase.
+							<FormattedMessage id="page.resumeweb.block.infos.text" />
 						</p>
 						<a href="https://francoismechin.com" target="__blank">
 							<button className="px-8 mt-4 py-2 mr-8">Demo</button>
@@ -76,7 +77,9 @@ const resumeweb = () => {
 						</div>
 					</div>
 					<Link href="/#projects" scroll={false}>
-						<p className="underline decoration-[#5651E5] underline-offset-[6px] cursor-pointer">Back</p>
+						<p className="underline decoration-[#5651E5] underline-offset-[6px] cursor-pointer">
+							<FormattedMessage id="pages.global.redirect.back" />
+						</p>
 					</Link>
 				</div>
 			</div>

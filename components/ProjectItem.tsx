@@ -1,6 +1,9 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { FormattedMessage } from "react-intl";
 
 interface ProjectItemProps {
 	title: string;
@@ -18,7 +21,7 @@ const ProjectItem: React.FC<ProjectItemProps> = ({ title, backgroundImg, project
 
 				<Link href={projectUrl}>
 					<p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer mt-4">
-						More Info
+						<FormattedMessage id="projects.card.redirect" />
 					</p>
 				</Link>
 			</div>
