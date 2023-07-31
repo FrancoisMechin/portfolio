@@ -16,22 +16,26 @@ const Projects = () => {
                     title='Netflix Clone' 
                     backgroundImg={netflixCloneImg} 
                     projectUrl='/netflixclone'
+                    alt='netflixclone-project'
                 />
                 <ProjectItem 
                     title='WebCSE' 
                     backgroundImg={webcseImg} 
                     projectUrl='/webcse'
+                    alt='webcse-project'
                 />
                 <ProjectItem 
                     title='Resume Website' 
                     backgroundImg={resumeImg} 
                     projectUrl='/resumeweb'
+                    alt='resumeweb-project'
                     
                 />
                 <ProjectItem 
                     title='Netflix Clone' 
                     backgroundImg={netflixCloneImg} 
                     projectUrl='/netflixclone'
+                    alt='netflixclone-project'
                     
                 />
             </div>

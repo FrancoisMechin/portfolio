@@ -9,7 +9,7 @@ const resumeweb = () => {
 	return (
 		<>
 			<Head>
-				<title>Netflix Clone - FM</title>
+				<title>Resume Website - FM</title>
 			</Head>
 			<div className="w-full">
 				<div className="w-screen h-[30vh] lg:h-[40vh] relative">

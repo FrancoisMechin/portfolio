@@ -1,7 +1,68 @@
 {
+    "comment.page.home":"/// ? WEBSITE TITLE AND DESC ENGLISH TRAD ///",
     "page.home.head.title": "Full-stack Developer : Francois",
     "page.home.head.meta.desc": "English example",
     "page.home.title": "Welcome to the homepage",
-    "page.home.description": "Its the english translation here"
+    "page.home.description": "Its the english translation here",
+
+    "comment.navbar":"/// ? NAVBAR ENGLISH TRAD ///",
+    "navbar.items.home":"HOME",
+    "navbar.items.about":"ABOUT",
+    "navbar.items.skills":"SKILLS",
+    "navbar.items.projects":"PROJECTS",
+    "navbar.items.contact":"CONTACT",
+
+    "comment.main":"/// ? MAIN SECTION ENGLISH TRAD ///",
+    "main.text.slogan":"COLLABORATE, INNOVATE: LET'S BUILD TOGETHER!",
+    "main.text.intro":"Hi, I&apos;m <span className='text-[#5651e5]'>François</span>",
+    "main.text.stack":"A Full-Stack Developer",
+    "main.text.content":"Building responsive front-end web applications while integrating powerful back-end technologies is at the core of my endeavors.",
+
+    "comment.about":"/// ? ABOUT SECTION ENGLISH TRAD ///",
+    "about.section.title":"ABOUT",
+    "about.section.caption":"Who I Am",
+    "about.text.title":"// <span className='text-[#5651e5] font-semibold'>Breaking the mold as a junior developer.</span>",
+    "about.text.content":"As a junior developer with a strong focus on growth, I specialize in crafting mobile-responsive front-end UI applications that seamlessly connect with APIs and various backend technologies. My journey has led me to delve into the realms of React, NextJS, NodeJS, and Laravel, and I am driven by an insatiable passion for learning new technologies.<br /><br />Versatility is a core aspect of my approach, as I firmly believe that there are multiple paths to achieving a task. While I excel in developing front-end applications using HTML, CSS, and Javascript, my adaptability allows me to swiftly embrace and master new tech stacks as the need arises.<br /><br />Although my background includes a Bac Pro Commerce, my lifelong passion for technology and computers led me to pursue a career transition into web and mobile development, culminating in the achievement of my professional title as a Web/Mobile Web Developer.<br /><br />For me, being a great developer is not solely about mastering one specific language but rather about selecting the most suitable tool for each unique project. I am eager to collaborate and contribute my skills to create innovative solutions that push the boundaries of web development. Together, let&apos;s build a future where technology empowers and enriches the lives of users worldwide.",
+    "about.text.link":"Check out some of my latest projects.",
+
+    "comment.skills":"/// ? SKILLS SECTION ENGLISH TRAD ///",
+    "skills.section.title":"SKILLS",
+    "skills.section.context":"What I can do",
+
+    "comment.projects":"/// ? PROJECTS SECTION ENGLISH TRAD ///",
+    "projects.section.title":"PROJECTS",
+    "projects.section.context":"What I&apos;ve built",
+    "projects.card.title.webcse":"WebCSE Local TV",
+    "projects.card.title.netflix":"Netflix Clone",
+    "projects.card.title.resumeweb":"Flip cards Resume website",
+    "projects.card.redirect":"More Info",
+
+    "comment.contact":"/// ? CONTACT SECTION ENGLISH TRAD ///",
+    "contact.section.title":"CONTACT",
+    "contact.section.context":"Get in touch",
+    "contact.card.job":"Full-stack Developer",
+    "contact.card.text":"I am <span className='text-green-400 font-bold tracking-wider'>actually available</span> for freelance or full-time positions. Contact me and let&apos;s talk.",
+    "contact.card.redirects":"CONNECT WITH ME",
+    "contact.form.label.name":"NAME",
+    "contact.form.label.phone":"PHONE NUMBER",
+    "contact.form.label.email":"EMAIL",
+    "contact.form.label.subject":"SUBJECT",
+    "contact.form.label.message":"MESSAGE",
+    "contact.form.button":"SEND MESSAGE",
+
+    "comment.pages.global":"/// ? STATIC TEXT GLOBAL PAGES ///",
+    "pages.global.block.infos.context":"Project",
+    "pages.global.block.infos.title":"Overview",
+    "pages.global.redirect.back":"Back",
+
+    "comment.page.netflixclone":"/// ? NETFLIX CLONE PAGE ENGLISH TRAD ///",
+    "page.netflixclone.block.infos.text":"The development of this Netflix clone stemmed from my aspiration to acquire essential skills in NextJS, Tailwind, Prisma, and MongoDB. Through this project, I delved into the intricacies of web development, honing my proficiency in cutting-edge technologies and frameworks.<br /><br />Since achieving my professional title, my unwavering dedication to personal and professional growth has driven me to actively pursue projects aligned with my expertise and ambitions. By engaging in endeavors that challenge and expand my skill set, I aim to fortify my capabilities in specialized domains, ensuring a dynamic and impactful career trajectory.",
+
+    "comment.page.webcse":"/// ? WEBCSE PAGE ENGLISH TRAD ///",
+    "page.webcse.block.infos.text":"During my 3-month internship as a web/mobile web developer, I worked in a multimedia company on a localized TV network platform. The goal was to schedule and manage daily film playlists, news tickers, and replay functionality. However, I was the sole developer assigned to this project, and it couldn&apos;t be deployed due to the company&apos;s ownership of the rights. Below are images showcasing the application&apos;s functionalities.<br /><br />This project demonstrates my expertise in web development, focusing on user-centric design and cutting-edge functionality.",
+
+    "comment.page.resumeweb":"/// ? RESUME WEBSITE PAGE ENGLISH TRAD ///",
+    "page.resumeweb.block.infos.text":"This website was the first project I undertook during my initial month of training. I took advantage of my free time to experiment with animations, create double-sided cards, set up email notifications, and more. Although it was a straightforward project, it provided me with valuable insights into fundamental programming languages during my early learning phase."
+
 
 }

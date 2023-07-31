@@ -34,11 +34,11 @@ const webcse = () => {
 						<p>Project</p>
 						<h2>Overview</h2>
 						<p className="my-3">
-							During my web/mobile web developer training, I collaborated with a multimedia company to
-							create a localized TV network platform. The goal was to schedule and manage daily film
-							playlists, news tickers, and replay functionality. However, due to production rights
-							limitations, the project couldn&apos;t be deployed. Below are images showcasing the
-							application&apos;s functionalities.
+							During my 3-month internship as a web/mobile web developer, I worked in a multimedia
+							company on a localized TV network platform. The goal was to schedule and manage daily
+							film playlists, news tickers, and replay functionality. However, I was the sole developer
+							assigned to this project, and it couldn&apos;t be deployed due to the company&apos;s ownership of
+							the rights. Below are images showcasing the application&apos;s functionalities.
 							<br />
 							<br />
 							This project demonstrates my expertise in web development, focusing on user-centric
