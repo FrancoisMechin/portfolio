@@ -15,11 +15,6 @@
 # production
 /build
 
-# translations
-/i18n
-/i18n/
-i18n/
-
 # misc
 .DS_Store
 *.pem

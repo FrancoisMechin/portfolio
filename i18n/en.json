@@ -37,7 +37,7 @@
 
     "comment.projects":"/// ? PROJECTS SECTION ENGLISH TRAD ///",
     "projects.section.title":"PROJECTS",
-    "projects.section.context":"What I&apos;ve built",
+    "projects.section.context":"What I've built",
     "projects.card.title.webcse":"WebCSE Local TV",
     "projects.card.title.netflix":"Netflix Clone",
     "projects.card.title.resumeweb":"Flip cards Resume website",
@@ -49,7 +49,7 @@
     "contact.card.job":"Full-stack Developer",
     "contact.card.text.first":"I am ",
     "contact.card.text.second":"actually available",
-    "contact.card.text.third":"for freelance or full-time positions. Contact me and let&apos;s talk.",
+    "contact.card.text.third":"for freelance or full-time positions. Contact me and let's talk.",
     "contact.card.redirects":"CONNECT WITH ME",
     "contact.form.label.name":"NAME",
     "contact.form.label.phone":"PHONE NUMBER",
@@ -68,7 +68,7 @@
     "page.netflixclone.infos.text.second":"Since achieving my professional title, my unwavering dedication to personal and professional growth has driven me to actively pursue projects aligned with my expertise and ambitions. By engaging in endeavors that challenge and expand my skill set, I aim to fortify my capabilities in specialized domains, ensuring a dynamic and impactful career trajectory.",
 
     "comment.page.webcse":"/// ? WEBCSE PAGE ENGLISH TRAD ///",
-    "page.webcse.block.infos.text.first":"During my 3-month internship as a web/mobile web developer, I worked in a multimedia company on a localized TV network platform. The goal was to schedule and manage daily film playlists, news tickers, and replay functionality. However, I was the sole developer assigned to this project, and it couldn&apos;t be deployed due to the company&apos;s ownership of the rights. Below are images showcasing the application&apos;s functionalities.",
+    "page.webcse.block.infos.text.first":"During my 3-month internship as a web/mobile web developer, I worked in a multimedia company on a localized TV network platform. The goal was to schedule and manage daily film playlists, news tickers, and replay functionality. However, I was the sole developer assigned to this project, and it couldn't be deployed due to the company's ownership of the rights. Below are images showcasing the application's functionalities.",
     "page.webcse.block.infos.text.second":"This project demonstrates my expertise in web development, focusing on user-centric design and cutting-edge functionality.",
 
     "comment.page.resumeweb":"/// ? RESUME WEBSITE PAGE ENGLISH TRAD ///",
