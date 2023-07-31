@@ -9,14 +9,19 @@ import {FaGithub, FaLinkedinIn} from 'react-icons/fa'
 import {BsFillPersonLinesFill} from 'react-icons/bs'
 import Logo from "@/public/assets/fmlogo--colors.png"
 import { useRouter } from 'next/router'
+import LanguageDropdown from '@/components/LanguageDropdown'
+import { FormattedMessage } from 'react-intl'
 
 
-const Navbar = () => {
+
+const Navbar = ({locales}) => {
     const [nav, setNav] = useState(false);
     const [shadow, setShadow] = useState(false);
-    const [navBg, setNavBg] = useState('#ecf0f3')
-    const [linkColor, setLinkColor] = useState('#1f2937')
-    const router = useRouter()
+    const [navBg, setNavBg] = useState('#ecf0f3');
+    const [linkColor, setLinkColor] = useState('#1f2937');
+
+    const router = useRouter();
+
 
     useEffect(() => {
         if (
@@ -57,7 +62,7 @@ const Navbar = () => {
     <div 
     style={{backgroundColor: `${navBg}`}}
     className={shadow ? 'fixed w-full h-20 shadow-xl bg-[#ecf0f3]/80 z-50' : 'fixed w-full h-20 bg-[#ecf0f3]/80 z-50'}>
-        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-2'>
             
             {/* //? Logo nav */}
             <Link href='/' >
@@ -68,6 +73,10 @@ const Navbar = () => {
         
             />
             </Link>
+
+            <div className='absolute left-[10rem]'>
+                <LanguageDropdown locales={locales}/>
+            </div>
             
             <div className='absolute right-10'>
                 <ul 
@@ -76,27 +85,27 @@ const Navbar = () => {
                     {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
                     <Link href='/#home' scroll={false} >
                         <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
-                            Home
+                            <FormattedMessage id='navbar.items.home' />
                         </li>
                     </Link>
                     <Link href='/#about' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
-                            About
+                            <FormattedMessage id='navbar.items.about' />
                         </li>
                     </Link>
                     <Link href='/#skills' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
-                            Skills
+                            <FormattedMessage id='navbar.items.skills' />
                         </li>
                     </Link>
                     <Link href='/#projects' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
-                            Projects
+                            <FormattedMessage id='navbar.items.projects' />
                         </li>
                     </Link>
                     <Link href='/#contact' scroll={false}>
                         <li className='ml-10 text-sm uppercase hover:border-b-2 border-[#5651E5]/70 hover:rounded-b hover:transition hover:ease-out duration-100'>
-                            Contact
+                            <FormattedMessage id='navbar.items.contact' />
                         </li>
                     </Link>
     
@@ -137,7 +146,7 @@ const Navbar = () => {
                             </div>
                         </div>
                         <div className='border-b border-gray-300 mb-4'>
-                            <p className='w-[85%] md:w-[90%] py-4'>Collaborate, Innovate: Let's Build Together!</p>
+                            <p className='w-[85%] md:w-[90%] py-4'><FormattedMessage id='navbar.mobile.slogan' /></p>
                         </div>
                     </div>
 
@@ -146,24 +155,24 @@ const Navbar = () => {
 
                             {/* //! Boucle a créer pour l'optimisations des rendus/facilités de maintenance */}
                             <Link href='/#home' scroll={false}>
-                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Home</li>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'><FormattedMessage id='navbar.items.home' /></li>
                             </Link>
                             <Link href='/#about' scroll={false}>
-                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>About</li>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'><FormattedMessage id='navbar.items.about' /></li>
                             </Link>
                             <Link href='/#skills' scroll={false}>
-                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Skills</li>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'><FormattedMessage id='navbar.items.skills' /></li>
                             </Link>
                             <Link href='/#projects' scroll={false}>
-                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Projects</li>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'><FormattedMessage id='navbar.items.projects' /></li>
                             </Link>
                             <Link href='/#contact' scroll={false}>
-                                <li onClick={()=> setNav(false)} className='py-4 text-sm'>Contact</li>
+                                <li onClick={()=> setNav(false)} className='py-4 text-sm'><FormattedMessage id='navbar.items.contact' /></li>
                             </Link>
                             {/* //! ///////////////////////////////////////////////////////////////////////////// */}
                         </ul>
                         <div className='pt-40'>
-                            <p className='uppercase tracking-widest text-[#5651e5]'>Let's Connect</p>
+                            <p className='uppercase tracking-widest text-[#5651e5]'><FormattedMessage id='navbar.mobile.redirects' /></p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
 
                                 {/* //? Utilisé deux fois, composants à créer? */}

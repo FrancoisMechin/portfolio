@@ -5,6 +5,7 @@ import { FcInfo } from "react-icons/fc";
 import Link from "next/link";
 import { SlideShow } from "@/components/SlideShow";
 import Head from "next/head";
+import { FormattedMessage } from "react-intl";
 
 const webcse = () => {
 	return (
@@ -34,15 +35,10 @@ const webcse = () => {
 						<p>Project</p>
 						<h2>Overview</h2>
 						<p className="my-3">
-							During my web/mobile web developer training, I collaborated with a multimedia company to
-							create a localized TV network platform. The goal was to schedule and manage daily film
-							playlists, news tickers, and replay functionality. However, due to production rights
-							limitations, the project couldn&apos;t be deployed. Below are images showcasing the
-							application&apos;s functionalities.
+							<FormattedMessage id="page.webcse.block.infos.text.first" />
 							<br />
 							<br />
-							This project demonstrates my expertise in web development, focusing on user-centric
-							design and cutting-edge functionality.
+							<FormattedMessage id="page.webcse.block.infos.text.second" />
 						</p>
 						<div className="pr-2">
 							<SlideShow />
