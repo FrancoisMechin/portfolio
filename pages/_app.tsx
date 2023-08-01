@@ -35,14 +35,13 @@ export default function App({ Component, pageProps }: AppProps) {
 	const description =
 		"Welcome to an aspiring freelance web developer's portfolio, showcasing a passion for creating captivating online experiences. With a year of hands-on experience, this developer specializes in both front-end and back-end development, constantly seeking growth and pushing boundaries. The displayed projects reflect a blend of technical expertise and creativity, making this developer an ideal collaborator for your next web venture. If you're in need of an enthusiastic and dedicated web developer, reach out now to bring your ideas to life!";
 
-	const title = "Full-Stack Developer : Francois Mechin";
+	const title = "Full-Stack Developer #Francois";
 	const metaImg = "../public/assets/fmlogo-FULL-BG-colors.png";
 
 	return (
 		<IntlProvider locale={currentLocale} messages={messages[currentLocale]}>
 			<main className={`${quicksand.variable} font-sans`} dir={getDirection(locale)}>
 				<Head>
-					<title>{title}</title>
 					<meta name="description" content={description} />
 					<meta name="viewport" content="width=device-width, initial-scale=1" />
 

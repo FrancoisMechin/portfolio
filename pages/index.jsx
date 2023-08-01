@@ -15,15 +15,21 @@ export default function Home() {
 	const intl = useIntl();
 	const title = intl.formatMessage({ id: "page.home.head.title"})
 	const description = intl.formatMessage({ id: "page.home.head.meta.desc"})
-	const metaImg = "../public/assets/fmlogo-FULL-BG-colors.png"
 
 	return (
-		<main>
-			<Main />
-			<About />
-			<Skills />
-			<Projects />
-			<Contact />
-		</main>
+		<>
+			<Head>
+				<title>{title}</title>
+				<meta name="description" content={description} />
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+			</Head>
+			<main>
+				<Main />
+				<About />
+				<Skills />
+				<Projects />
+				<Contact />
+			</main>
+		</>
 	);
 }
