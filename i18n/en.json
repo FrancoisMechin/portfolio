@@ -57,6 +57,11 @@
     "contact.form.label.subject.placeholder":"Questions for a showcase website",
     "contact.form.label.message":"MESSAGE",
     "contact.form.button":"SEND MESSAGE",
+    "contact.form.alert.warning": "We encountered a problem, please try again later.",
+    "contact.form.alert.success.first": "Your email has been successfully sent !",
+    "contact.form.alert.success.second": "I will get back to you as soon as possible.",
+
+
 
     "comment.pages.global":"/// ? STATIC TEXT GLOBAL PAGES ///",
     "pages.global.block.infos.context":"Project",

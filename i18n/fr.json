@@ -57,6 +57,10 @@
     "contact.form.label.subject.placeholder":"Questions pour un site vitrine",
     "contact.form.label.message": "MESSAGE",
     "contact.form.button": "ENVOYER LE MESSAGE",
+    "contact.form.alert.warning":"Nous avons rencontré un problème, réessayez ultérieurement",
+    "contact.form.alert.success.first":"Votre mail a bien été envoyé !",
+    "contact.form.alert.success.second":"Je vous recontacterai au plus vite",
+
 
     "comment.pages.global": "/// ? TEXTES STATIQUES DES PAGES GLOBALES ///",
     "pages.global.block.infos.context": "Projet",
