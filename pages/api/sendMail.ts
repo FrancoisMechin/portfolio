@@ -15,9 +15,9 @@ export default async function sendMail(req: NextApiRequest, res: NextApiResponse
     const msg = {
         to: 'dev@francoismechin.com', // Remplacez par votre adresse e-mail de réception
         from: 'dev@francoismechin.com',
-        subject,
-        text: `Nom: ${first} ${last}\nTéléphone: ${phone}\n\n${message}`,
-        html: `<p><strong>Nom:</strong> ${first} ${last}</p><p><strong>Téléphone:</strong> ${phone}</p><p><strong>Email:</strong> ${email}</p><p>${message}</p>`,
+        subject: '[FORMULAIRE] '+subject,
+        text: `Nom: ${first} ${last}\nTéléphone: ${phone}\nSujet: ${subject}\n<\n>${message}`,
+        html: `<p><strong>Nom:</strong> ${first} ${last}</p><p><strong>Téléphone:</strong> ${phone}</p><p><strong>Sujet:</strong> ${subject}</p><p><strong>Email:</strong> ${email}</p><p>${message}</p>`,
     };
 
     try {
