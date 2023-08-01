@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 					<meta property="og:title" content={title} />
 					<meta property="og:type" content="website" />
-					<meta property="og:url" content="www.francoismechin.fr" />
+					<meta property="og:url" content="https://www.francoismechin.fr" />
 					<meta
 						property="og:image"
 						content="https://www.francoismechin.fr/assets/fmlogo-FULL-BG-colors.png"
