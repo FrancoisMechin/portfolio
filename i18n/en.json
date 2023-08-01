@@ -49,10 +49,12 @@
     "contact.card.text.second":"actually available",
     "contact.card.text.third":"for freelance or full-time positions. Contact me and let's talk.",
     "contact.card.redirects":"CONNECT WITH ME",
-    "contact.form.label.name":"NAME",
+    "contact.form.label.firstname":"First name",
+    "contact.form.label.lastname":"Last name",
     "contact.form.label.phone":"PHONE NUMBER",
     "contact.form.label.email":"EMAIL",
     "contact.form.label.subject":"SUBJECT",
+    "contact.form.label.subject.placeholder":"Questions for a showcase website",
     "contact.form.label.message":"MESSAGE",
     "contact.form.button":"SEND MESSAGE",
 

@@ -49,10 +49,12 @@
     "contact.card.text.second":"actuellement disponible",
     "contact.card.text.third":" pour des projets en freelance ou à temps plein. Contactez-moi et discutons ensemble.",
     "contact.card.redirects": "CONTACTEZ-MOI",
-    "contact.form.label.name": "NOM",
+    "contact.form.label.firstname":"Prénom",
+    "contact.form.label.lastname":"Nom",
     "contact.form.label.phone": "NUMÉRO DE TÉLÉPHONE",
     "contact.form.label.email": "EMAIL",
     "contact.form.label.subject": "SUJET",
+    "contact.form.label.subject.placeholder":"Questions pour un site vitrine",
     "contact.form.label.message": "MESSAGE",
     "contact.form.button": "ENVOYER LE MESSAGE",
 
