@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 	const currentLocale = locale ?? "en";
 	const description =
-		"Welcome to François Mechin's portfolio website! François is an aspiring freelance web developer with a strong passion for creating captivating online experiences. With a year of hands-on experience in web development, François is committed to continuous learning and growth in the dynamic world of coding. Specializing in front-end and back-end development, François is eager to collaborate on projects that push boundaries and explore new possibilities. This website showcases François's projects, demonstrating a blend of technical skills and creativity. If you're looking to collaborate with an enthusiastic and dedicated web developer, get in touch with François to discuss your project ideas today!";
+		"Welcome to an aspiring freelance web developer's portfolio, showcasing a passion for creating captivating online experiences. With a year of hands-on experience, this developer specializes in both front-end and back-end development, constantly seeking growth and pushing boundaries. The displayed projects reflect a blend of technical expertise and creativity, making this developer an ideal collaborator for your next web venture. If you're in need of an enthusiastic and dedicated web developer, reach out now to bring your ideas to life!";
 
 	const title = "Full-Stack Developer : Francois Mechin";
 	const metaImg = "../public/assets/fmlogo-FULL-BG-colors.png";
@@ -49,24 +49,33 @@ export default function App({ Component, pageProps }: AppProps) {
 					{/* <!-- Schema.org markup for Google+ --> */}
 					<meta itemProp="name" content={title} />
 					<meta itemProp="description" content={description} />
-					<meta itemProp="image" content={metaImg} />
+					<meta
+						itemProp="image"
+						content="https://www.francoismechin.fr/assets/fmlogo-FULL-BG-colors.png"
+					/>
 					{/* <!-- Open Graph data --> */}
 
 					<meta property="og:title" content={title} />
 					<meta property="og:type" content="website" />
-					<meta property="og:url" content="https://francoismechin.fr" />
-					<meta property="og:image" content={metaImg} />
+					<meta property="og:url" content="francoismechin.fr" />
+					<meta
+						property="og:image"
+						content="https://www.francoismechin.fr/assets/fmlogo-FULL-BG-colors.png"
+					/>
 					<meta property="og:description" content={description} />
 					<meta property="og:site_name" content={title} />
 
 					{/* <!-- Twitter Card data --> */}
-					<meta name="twitter:card" content="summary_large_image" />
-					<meta name="twitter:site" content="@publisher_handle" />
+					<meta name="twitter:card" content="summary" />
+					<meta name="twitter:site" content="francoismechin.fr" />
 					<meta name="twitter:title" content={title} />
 					<meta name="twitter:description" content={description} />
-					<meta name="twitter:creator" content="@author_handle" />
+					<meta name="twitter:creator" content="Francois Mechin" />
 					{/* <-- Twitter Summary card images must be at least 200x200px --> */}
-					<meta name="twitter:image" content={metaImg} />
+					<meta
+						name="twitter:image"
+						content="https://www.francoismechin.fr/assets/fmlogo-FULL-BG-colors.png"
+					/>
 
 					<link
 						rel="icon"
