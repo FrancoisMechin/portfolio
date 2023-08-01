@@ -57,7 +57,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 					<meta property="og:title" content={title} />
 					<meta property="og:type" content="website" />
-					<meta property="og:url" content="francoismechin.fr" />
+					<meta property="og:url" content="https://francoismechin.fr" />
 					<meta
 						property="og:image"
 						content="https://www.francoismechin.fr/assets/fmlogo-FULL-BG-colors.png"
@@ -67,7 +67,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 					{/* <!-- Twitter Card data --> */}
 					<meta name="twitter:card" content="summary" />
-					<meta name="twitter:site" content="francoismechin.fr" />
+					<meta name="twitter:site" content="https://francoismechin.fr" />
 					<meta name="twitter:title" content={title} />
 					<meta name="twitter:description" content={description} />
 					<meta name="twitter:creator" content="Francois Mechin" />
