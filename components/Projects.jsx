@@ -5,6 +5,7 @@ import ProjectItem from "@/components/ProjectItem"
 import netflixCloneImg from "../public/assets/projects/netflixclone.png"
 import webcseImg from "../public/assets/projects/webcse.png"
 import resumeImg from "../public/assets/projects/resumeweb.png"
+import saasImg from "../public/assets/projects/aisaas.jpg"
 import { FormattedMessage } from 'react-intl'
 
 const Projects = () => {
@@ -35,10 +36,10 @@ const Projects = () => {
                     
                 />
                 <ProjectItem 
-                    title={<FormattedMessage id='projects.card.title.netflix'/>} 
-                    backgroundImg={netflixCloneImg} 
-                    projectUrl='/netflixclone'
-                    alt='netflixclone-project'
+                    title="Saas AI Platform"
+                    backgroundImg={saasImg} 
+                    projectUrl='#projects'
+                    alt='saas-ai-platform'
                     
                 />
             </div>

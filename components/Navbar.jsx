@@ -176,18 +176,26 @@ const Navbar = ({locales}) => {
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
 
                                 {/* //? Utilisé deux fois, composants à créer? */}
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaLinkedinIn />
-                                </div>
-                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub />
-                                </div>
-                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineMail/>
-                                </div>
-                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
-                                </div>
+                                <a href="mailto:f.mechin@protonmail.com" target='__blank'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <AiOutlineMail/>
+                                    </div>
+                                </a>
+                                <a href="https://www.linkedin.com/in/francois-mechin/" target='__blank'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                            <FaLinkedinIn/>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/FrancoisMechin" target='__blank'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <FaGithub />
+                                    </div>
+                                </a>
+                                <a href="https://www.malt.fr/" target='__blank'>
+                                    <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                        <BsFillPersonLinesFill />
+                                    </div>
+                                </a>
                                 {/* //? ///////////////////////////////////// */}
 
                             </div>

@@ -112,6 +112,11 @@ return (
                         <p className='uppercase pt-8'><FormattedMessage id='contact.card.redirects'/></p>
                         <div className='flex items-center justify-between py-4'>
 
+                            <a href="mailto:f.mechin@protonmail.com" target='__blank'>
+                                <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+                                    <AiOutlineMail/>
+                                </div>
+                            </a>
                             <a href="https://www.linkedin.com/in/francois-mechin/" target='__blank'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                                         <FaLinkedinIn/>
@@ -120,11 +125,6 @@ return (
                             <a href="https://github.com/FrancoisMechin" target='__blank'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
                                     <FaGithub />
-                                </div>
-                            </a>
-                            <a href="mailto:f.mechin@protonmail.com" target='__blank'>
-                                <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
-                                    <AiOutlineMail/>
                                 </div>
                             </a>
                             <a href="https://www.malt.fr/" target='__blank'>
