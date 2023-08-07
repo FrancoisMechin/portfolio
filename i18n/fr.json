@@ -38,7 +38,8 @@
     "projects.section.context": "Ce que j'ai réalisé",
     "projects.card.title.webcse": "WebCSE Local TV",
     "projects.card.title.netflix": "Clone de Netflix",
-    "projects.card.title.resumeweb": "Site de CV avec cartes retournables",
+    "projects.card.title.resumeweb": "Site CV flipcards",
+    "projects.card.title.saasai":"Plateforme de services d'IA",
     "projects.card.redirect": "+ d'infos",
     "projects.card.redirect.comingsoon":"À venir...",
 

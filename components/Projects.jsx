@@ -17,7 +17,7 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 gap-8'>
 
                 <ProjectItem 
-                    title="Saas AI Platform"
+                    title={<FormattedMessage id='projects.card.title.saasai'/>} 
                     backgroundImg={saasImg} 
                     projectUrl='#projects'
                     alt='saas-ai-platform'
