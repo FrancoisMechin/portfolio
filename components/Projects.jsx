@@ -17,6 +17,12 @@ const Projects = () => {
             <div className='grid md:grid-cols-2 gap-8'>
 
                 <ProjectItem 
+                    title="Saas AI Platform"
+                    backgroundImg={saasImg} 
+                    projectUrl='#projects'
+                    alt='saas-ai-platform'
+                />
+                <ProjectItem 
                     title={<FormattedMessage id='projects.card.title.netflix'/>} 
                     backgroundImg={netflixCloneImg} 
                     projectUrl='/netflixclone'
@@ -33,13 +39,6 @@ const Projects = () => {
                     backgroundImg={resumeImg} 
                     projectUrl='/resumeweb'
                     alt='resumeweb-project'
-                    
-                />
-                <ProjectItem 
-                    title="Saas AI Platform"
-                    backgroundImg={saasImg} 
-                    projectUrl='#projects'
-                    alt='saas-ai-platform'
                     
                 />
             </div>
