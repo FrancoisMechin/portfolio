@@ -1,6 +1,3 @@
-# Personal Website / Portfolio
-
-Francois Mechin
 
 ## Languages
 
